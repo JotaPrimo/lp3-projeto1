@@ -29,7 +29,7 @@ public class PessoaController {
 	{
 		Pessoa pessoa = new Pessoa();
 		model.addAttribute("pessoa", pessoa);
-		return "form_new_pessoa";
+		return "pessoa/form_new_pessoa";
 		
 	}
 	
@@ -45,7 +45,7 @@ public class PessoaController {
 	{
 		Pessoa pessoa = pessoaService.getPessoaById(id);
 		model.addAttribute("pessoa", pessoa);
-		return "form_update_pessoa";
+		return "pessoa/form_update_pessoa";
 		
 	}
 	
